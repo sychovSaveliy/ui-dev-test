@@ -9,7 +9,13 @@
 </head>
 <body>
     <script>
-        console.log($api.getAPI());
+        $data
+            .favoriteList()
+            .then(_onLoadFavoriteList);
+
+            function _onLoadFavoriteList(resp) {
+                console.log(resp);
+            }
     </script>
 </body>
 </html>

@@ -20,3 +20,14 @@ gulp.task('js', function () {
 		.pipe(concat('app.js'))
 		.pipe(gulp.dest('./bin/js'));
 });
+
+gulp.task('watch', function () {
+    gulp.start('compile');
+    gulp.watch(paths.js, ['js']);
+});
+
+gulp.task('compile', function () {
+	// gulp.start('less');
+	// gulp.start('html');
+    gulp.start('js');
+});

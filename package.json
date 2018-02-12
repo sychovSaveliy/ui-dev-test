@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "node server/server.js",
-    "mock": "node mock/index.js"
+    "mock": "node mock/index.js",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git"
