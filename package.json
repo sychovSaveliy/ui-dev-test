@@ -4,7 +4,8 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "mock": "node mock/index.js"
   },
   "repository": {
     "type": "git"

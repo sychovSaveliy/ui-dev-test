@@ -5,7 +5,7 @@ let concat = require('gulp-concat');
 let paths = {
 	html: ['./src/ng-app/**/*.html', 'index.html'],
 	less: ['./src/native-app/less/**/*.less'],
-	js: ['./native-app/**/*.js']
+	js: ['./src/native-app/**/*.js']
 };
 
 gulp.task('less', function () {
